@@ -1,0 +1,94 @@
+.part-8 {
+  background-color: #215ba6;
+}
+
+.part-8 .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px 60px;
+}
+
+.part8-conteudo {
+  display: grid;
+  gap: 60px;
+}
+
+.part-8 .subtitulo2 {
+  color: #eee;
+  font-family: "Press Start 2P", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: start;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.part-8 .subtitulo2:hover {
+  color: #0d0d0d;
+}
+
+.part8-conteudo .descricao-jogadores {
+  color: #eee;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  text-align: start;
+  overflow: hidden;
+  cursor: default;
+}
+
+.grid-imagens-jogadores {
+  display: grid;
+  gap: 60px;
+  justify-items: end;
+}
+
+.part-8 .jogador {
+  justify-self: center;
+  max-width: 300px;
+}
+
+@media only screen and (max-width: 880px) {
+  .part-8 .container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .part8-conteudo {
+    justify-items: center;
+  }
+  .part8-conteudo .descricao-jogadores {
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+  .part-8 .jogador {
+    width: 400px;
+  }
+  .part-8 .container {
+    gap: 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .part-8 .subtitulo2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .part8-conteudo .descricao-jogadores {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .part-8 .jogador {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .part-8 .jogador {
+    width: 180px;
+  }
+}

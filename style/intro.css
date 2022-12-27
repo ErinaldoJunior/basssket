@@ -1,0 +1,116 @@
+.intro {
+  background-color: #0d0d0d;
+}
+
+.intro-conteudo {
+  padding: 100px;
+}
+
+.titulo {
+  text-align: center;
+  position: relative;
+  cursor: default;
+}
+
+#titulo {
+  padding: 50px 0px 50px 20px;
+  color: #dd7732;
+}
+
+#titulo:hover {
+  color: #43007f;
+  transition: 0.3s;
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
+
+.img-intro-enterrada {
+  display: inline-block;
+  position: absolute;
+  right: 200px;
+  top: 250px;
+  display: none;
+  -webkit-animation: animate-gif 3s;
+}
+
+@-webkit-keyframes animate-gif {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.aparecer {
+  display: block;
+}
+
+.container p span.typed-text {
+  font-weight: normal;
+  color: #dd7732;
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .intro-conteudo {
+    flex-wrap: wrap;
+    justify-items: center;
+  }
+  .intro .titulo {
+    align-self: start;
+  }
+  .img-intro-enterrada {
+    position: initial;
+    width: 200px;
+    margin-top: -100px;
+  }
+}

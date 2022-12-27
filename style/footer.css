@@ -1,0 +1,55 @@
+footer {
+  background-color: #0d0d0d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titulo-footer {
+  color: #eee;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  padding: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+  cursor: default;
+}
+
+.redes {
+  display: flex;
+  gap: 50px;
+  margin-right: 20px;
+  align-items: center;
+}
+
+.redes img {
+  width: 50px;
+  transition: 0.3s;
+}
+
+.redes img:hover {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 600px) {
+  .redes {
+    gap: 20px;
+  }
+  .titulo-footer {
+    text-align: center;
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  .redes img {
+    width: 30px;
+  }
+}

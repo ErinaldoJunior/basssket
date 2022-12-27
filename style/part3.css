@@ -1,0 +1,92 @@
+.part-3 {
+  background-color: #43007f;
+}
+
+.part-3 .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px 60px;
+}
+
+.titulo5 {
+  color: #dd7732;
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+
+.part-3 p {
+  color: #eee;
+  text-align: start;
+  line-height: 2;
+}
+
+.part3-conteudo {
+  display: grid;
+  gap: 60px;
+  justify-items: center;
+  align-items: center;
+}
+
+.part3-imagens {
+  display: flex;
+  align-items: center;
+}
+
+.nba {
+  width: 200px;
+}
+
+.teams {
+  width: 400px;
+}
+
+@media only screen and (max-width: 980px) {
+  .part-3 .container {
+    grid-template-columns: 1fr;
+  }
+  .part3-imagens {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .nba {
+    width: 100px;
+  }
+  .part3-imagens {
+    gap: 10px;
+    margin-top: -100px;
+  }
+  .part-3 .titulo5 {
+    font-size: 4rem;
+  }
+
+  .part-3 p {
+    text-align: center;
+    line-height: 2;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .nba {
+    width: 100px;
+  }
+  .teams {
+    width: 300px;
+  }
+  .part-3 p {
+    padding: 0px 60px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .nba {
+    display: none;
+  }
+  .part-3 p {
+    padding: 0px;
+  }
+  .teams {
+    margin-left: 30px;
+  }
+}

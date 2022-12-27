@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+body {
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 800px;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+.container p {
+  color: #eee;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  display: block;
+}
+
+.font-title {
+  font-family: "Press Start 2P", cursive;
+  cursor: default;
+  color: #f2f2f2;
+  font-size: 3rem;
+}
+
+.seta {
+  transition: 0.3s;
+  width: 150px;
+}
+
+.seta:hover {
+  transform: scale(1.1);
+}
+
+.btn {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+}
+
+.botao {
+  transition: 0.4s;
+  width: 200px;
+  margin-top: -20px;
+}
+
+.botao:hover {
+  transform: scale(1.2);
+}
+
+.js-scroll {
+  opacity: 0;
+  transform: translate3d(-80px, 0, 0);
+  transition: 0.5s;
+}
+
+.js-scroll.ativo-animar {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.jogador:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .botao {
+    width: 100px;
+    margin-top: 0px;
+  }
+}
